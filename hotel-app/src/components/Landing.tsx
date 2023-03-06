@@ -3,7 +3,7 @@ import { NavBar, Hero } from "./index";
 
 const Landing = () => {
   return (
-    <div>
+    <div className="px-20">
       <NavBar />
       <Hero />
     </div>

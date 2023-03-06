@@ -8,7 +8,10 @@ interface ItemProps {
 const NavBarItem = (props: ItemProps) => {
   return (
     <div className="pr-8 ">
-      <a className="text-accentBlue hover:text-primaryYellow font-sans" href={props.handler}>
+      <a
+        className="text-primaryBlue hover:text-slate-500 font-montserrat font-bold transition-all duration-300 ease"
+        href={props.handler}
+      >
         {props.name}
       </a>
     </div>

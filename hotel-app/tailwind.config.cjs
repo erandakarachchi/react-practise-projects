@@ -9,11 +9,19 @@ module.exports = {
         secondaryYellow: "#F9CC0B",
         accentBlue: "#F9F9F9",
       },
-      backgroundImage:{
-        'homeHeroImage':"url(./src/assets/images/hero.png)"
-      }
+      backgroundImage: {
+        homeHeroImage: "url(./src/assets/images/hero.png)",
+        homeImage: "url(./src/assets/images/home.png)",
+      },
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+      },
+      spacing: {
+        128: "32rem",
+        200: "50rem",
+      },
     },
-    
   },
   plugins: [],
 };
