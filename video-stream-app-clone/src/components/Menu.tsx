@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import logo from "./../assets/images/logo.png";
 
-// icons
 import HomeSharpIcon from "@mui/icons-material/HomeSharp";
 import SubscriptionsOutlinedIcon from "@mui/icons-material/SubscriptionsOutlined";
 import VideoLibraryOutlinedIcon from "@mui/icons-material/VideoLibraryOutlined";
@@ -85,6 +84,8 @@ const LoginButton = styled.button`
   gap: 10px;
   margin-top: 15px;
   cursor: pointer;
+  min-width: 6rem;
+  font-weight: bold;
 `;
 
 const SubHeading = styled.p`
