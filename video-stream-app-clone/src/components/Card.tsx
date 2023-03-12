@@ -23,7 +23,7 @@ const ChannelImg = styled.img`
 const DetailsWrapper = styled.div`
   display: flex;
   margin-top: 15px;
-  gap: 10px;
+  gap: 15px;
   color: ${(props) => props.theme.primaryWhite};
 `;
 
@@ -34,29 +34,36 @@ const TextContent = styled.div`
 `;
 
 const Title = styled.p`
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
+  color: ${(props) => props.theme.textPrimary};
+  font-family: "Roboto", "Arial", sans-serif;
 `;
 
 const ChannelName = styled.p`
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 12px;
+  color: ${(props) => props.theme.softColor};
 `;
 
 const StatisticsText = styled.p`
-  font-size: 14px;
+  font-size: 12px;
+  color: ${(props) => props.theme.softColor};
 `;
 
-const Card = () => {
+interface PropTypes {
+  card: any;
+}
+
+const Card = (props: PropTypes) => {
   return (
     <Container>
-      <Img src="https://cdn.create.vista.com/downloads/50022683-5dcf-4f22-aea7-aaf342f0a502_1024.jpeg" />
+      <Img src={props.card.image} />
       <DetailsWrapper>
-        <ChannelImg src="https://img.freepik.com/free-vector/3d-cartoon-young-woman-smiling-circle-frame-character-illustration-vector-design_40876-3100.jpg?w=826&t=st=1678551549~exp=1678552149~hmac=c52fda5004f8b50f1e48234c13a592af00843bc947e4af22d22446e2c8545f80" />
+        <ChannelImg src={props.card.channelImage} />
         <TextContent>
-          <Title>The Process of Making the Interior of the Room</Title>
-          <ChannelName>TheWebDev</ChannelName>
-          <StatisticsText> 11K Views • 10 hours ago</StatisticsText>
+          <Title>{props.card.title}</Title>
+          <ChannelName>{props.card.name}</ChannelName>
+          <StatisticsText> 11M Views • 10 hours ago</StatisticsText>
         </TextContent>
       </DetailsWrapper>
     </Container>
