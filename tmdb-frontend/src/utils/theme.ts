@@ -1,8 +1,7 @@
 const darkTheme = {
-  primaryBlack: "#2d3436",
+  primaryBlack: "#000",
   primaryWhite: "#fff",
   secondaryWhite: "#EEEEEE",
-  primaryRed: "#ff7675",
   primaryGreen: "#00b894",
 };
 

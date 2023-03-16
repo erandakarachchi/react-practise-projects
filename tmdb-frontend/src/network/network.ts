@@ -3,4 +3,9 @@ const getData = async (url: string) => {
   return response.json();
 };
 
+const urlBuilder = () => {
+
+}
+
 export { getData };
+

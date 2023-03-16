@@ -7,14 +7,15 @@ const NavBarContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 60px;
   width: 100%;
   box-sizing: border-box;
   background-color: ${(props) => props.theme.primaryBlack};
-  padding: 0 20px;
+  padding: 0 2rem;
   color: ${(props) => props.theme.primaryWhite};
   position: sticky;
   top: 0;
+  z-index: 10;
 `;
 
 const LogoContainer = styled.div`
