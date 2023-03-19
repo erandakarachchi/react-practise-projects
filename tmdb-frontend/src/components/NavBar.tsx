@@ -10,10 +10,10 @@ const NavBarContainer = styled.div`
   height: 60px;
   width: 100%;
   box-sizing: border-box;
-  background-color: ${(props) => props.theme.primaryBlack};
+  background-color: transparent;
   padding: 0 2rem;
   color: ${(props) => props.theme.primaryWhite};
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
 `;
@@ -24,7 +24,7 @@ const LogoContainer = styled.div`
 `;
 
 const Logo = styled.img`
-  height: 2.5rem;
+  height: 2rem;
 `;
 
 const MenuContainer = styled.div`
@@ -34,8 +34,8 @@ const MenuContainer = styled.div`
 `;
 
 const MenuItem = styled.a`
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 300;
   color: ${(props) => props.theme.primaryWhite};
   &:hover {
     cursor: pointer;

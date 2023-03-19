@@ -8,9 +8,11 @@ interface PropTypes {
 
 const SecondaryMoviesCardContainer = styled.div`
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 1rem;
   box-sizing: border-box;
+  cursor: pointer;
 `;
 
 const PosterImage = styled.img`

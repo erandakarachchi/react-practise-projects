@@ -34,7 +34,7 @@ const Home = () => {
     );
     response = await response.json();
     setPopularMovies((response as any).results);
-    setHomeMovie((response as any).results[3]);
+    setHomeMovie((response as any).results[2]);
     console.log("upcomingMovies", upcomingMovies);
   };
   const getTopRatedMovies = async () => {
@@ -58,7 +58,6 @@ const Home = () => {
       <ListContainer>
         <ScrollMovieList title="Popular Movies" movies={popularMovies} />
         <ScrollMovieList title="Top Rated Movies" movies={topRatedMovies} />
-        <ScrollMovieList title="Upcoming Movies" movies={upcomingMovies} />
         <ScrollMovieList title="Upcoming Movies" movies={upcomingMovies} />
       </ListContainer>
     </HomeContainer>

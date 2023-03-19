@@ -25,10 +25,10 @@ const HeroImage = styled.div<HeroImageProps>`
 `;
 
 const ContentContainer = styled.div`
-  width: 80%;
+  width: 72%;
   align-items: center;
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
 `;
 
 const TextContainer = styled.div`
@@ -46,7 +46,7 @@ const PosterImage = styled.img`
 `;
 
 const Title = styled.h2`
-  font-size: 7.5rem;
+  font-size: 6rem;
   font-weight: 600;
   margin-bottom: 1rem;
 `;

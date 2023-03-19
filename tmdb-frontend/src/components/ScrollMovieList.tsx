@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { SubHeading, SecondaryMoviesCard } from "../components";
 
 interface PropTypes {
@@ -55,13 +56,16 @@ const ScrollMovieList = (props: PropTypes) => {
       </TitleContainer>
       <ScrollContainer>
         {props.movies.map((movie: any, index: number) => {
-          return (
-            <SecondaryMoviesCard
-              key={index}
-              name={movie.title}
-              image={movie.poster_path}
-            />
-          );
+          if (index <= 5)
+            return (
+              <Link key={index} to={`/movie/${movie.id}`}>
+                <SecondaryMoviesCard
+                  name={movie.title}
+                  image={movie.poster_path}
+                />
+              </Link>
+            );
+          return null;
         })}
       </ScrollContainer>
     </>
