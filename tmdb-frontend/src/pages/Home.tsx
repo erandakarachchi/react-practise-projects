@@ -24,8 +24,6 @@ const Home = () => {
     );
     response = await response.json();
     setUpcomingMovies((response as any).results);
-    // setHomeMovie((response as any).results[5]);
-    console.log("upcomingMovies", upcomingMovies);
   };
 
   const getPopularMovies = async () => {
@@ -34,7 +32,7 @@ const Home = () => {
     );
     response = await response.json();
     setPopularMovies((response as any).results);
-    setHomeMovie((response as any).results[2]);
+    setHomeMovie((response as any).results[0]);
     console.log("upcomingMovies", upcomingMovies);
   };
   const getTopRatedMovies = async () => {
