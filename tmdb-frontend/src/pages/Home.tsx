@@ -6,6 +6,8 @@ const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
 const HomeContainer = styled.div`
   background-color: ${(props) => props.theme.primaryBlack};
+  display: grid;
+  grid-template-columns: repeat(12fr);
 `;
 
 const ListContainer = styled.div`
@@ -53,11 +55,11 @@ const Home = () => {
   return (
     <HomeContainer>
       <HeroMovie movie={homeMovie}></HeroMovie>
-      <ListContainer>
+      {/* <ListContainer>
         <ScrollMovieList title="Popular Movies" movies={popularMovies} />
         <ScrollMovieList title="Top Rated Movies" movies={topRatedMovies} />
         <ScrollMovieList title="Upcoming Movies" movies={upcomingMovies} />
-      </ListContainer>
+      </ListContainer> */}
     </HomeContainer>
   );
 };

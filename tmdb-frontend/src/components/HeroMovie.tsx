@@ -22,6 +22,10 @@ const HeroImage = styled.div<HeroImageProps>`
   height: 100vh;
   background-size: cover;
   color: white;
+
+  @media (max-width: 768px) {
+    background-position: center;
+  }
 `;
 
 const ContentContainer = styled.div`
@@ -29,6 +33,12 @@ const ContentContainer = styled.div`
   align-items: center;
   display: flex;
   gap: 2rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    padding: 0 1rem;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -38,6 +48,9 @@ const TextContainer = styled.div`
 
 const ImageContainer = styled.div`
   display: flex;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const PosterImage = styled.img`
@@ -49,11 +62,20 @@ const Title = styled.h2`
   font-size: 6rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  @media (max-width: 768px) {
+    font-size: 2.85rem;
+    text-align: center;
+  }
 `;
 
 const Description = styled.p`
   font-size: 1rem;
   width: 60%;
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+    text-align: center;
+    width: 100%;
+  }
 `;
 
 const HeroMovie = (props: propTypes) => {
